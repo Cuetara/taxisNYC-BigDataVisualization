@@ -14,26 +14,31 @@
                   <md-button href="limpieza-de-datos.html" class="md-success md-lg" target="_blank" > Limpieza de datos </md-button>
                 </div>
                 <div class="buttom-python">
-                  <md-button href="Poligonos-Aeropuerto-JFK-y-Empire-State.html" class="md-success md-lg" target="_blank" > Obtención de Barrios y Distritos</md-button>
+                  <md-button href="Barrios-Distritos-por-longitud-latitud.html" class="md-success md-lg" target="_blank" > Obtención de Barrios y Distritos</md-button>
                 </div>
                 <div class="buttom-python">
                   <md-button href="Matriz-para-diagrama-chord.html" class="md-success md-lg" target="_blank" > Matriz para el diagrama Chord </md-button>
                 </div>
                 <div class="buttom-python">
-                  <md-button href="Matriz-para-diagrama-chord.html" class="md-success md-lg" target="_blank" > Polígonos en Puntos de Interés </md-button>
+                  <md-button href="Poligonos-Aeropuerto-JFK-y-Empire-State.html" class="md-success md-lg" target="_blank" > Polígonos en Puntos de Interés </md-button>
                 </div>
                 <div class="buttom-python">
                   <md-button href="Ruta-completa-de-un-unico-taxi.html" class="md-success md-lg" target="_blank" > Ruta completa de un único taxi </md-button>
                 </div>
                 <br> 
                 <br> 
+                <br>
                 <br> 
-                <br> 
-                <br> 
-                <br> 
-                <h4>Puedes descargar todo el código y datasets anteriores en Github </h4>
+                <h4>Puedes descargar todos los scripts de manipulación de datos, Jupyter Notebooks y datasets en Google Drive </h4>
                 <div class="buttom-python">
-                  <md-button href="https://github.com/" class="md-rose md-lg" target="_blank" > Ir a Github </md-button>
+                  <md-button href="https://drive.google.com/drive/folders/1-CU2twfzWu0bApJwTFXoJP-q-QLCR5MS?usp=sharing" class="md-warning md-lg" target="_blank" > Ir a Google Drive </md-button>
+                </div>
+                <br> 
+                <br> 
+                <br> 
+                <h4>Además, también puede descargar el código de esta web en Github </h4>
+                <div class="buttom-python">
+                  <md-button href="https://github.com/Cuetara/taxisNYC-BigDataVisualization" class="md-rose md-lg" target="_blank" > Ir a Github </md-button>
                 </div>
              <br>
           </div>
