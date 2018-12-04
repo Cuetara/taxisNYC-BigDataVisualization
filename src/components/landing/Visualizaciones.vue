@@ -100,9 +100,9 @@
               <md-tabs md-sync-route class="md-warning" md-alignment="right">
                 <md-tab id="tab-pages" md-label="Trayectos principales">
                   <div id="3-map">
-                  <h4><span>Flujo de trayectos entre diferentes barrios</span>, New York</h4>
+                  <h4><span id="3-span">Flujo de trayectos entre diferentes barrios</span>, New York</h4>
                   </div>
-                  <d3-map id-map="d3-map"/>
+                  <d3-map id-map="d3-map" span-id="3-span"/>
                   <v-popover offset="4" placement="bottom"> 
                     <md-button class="md-rose md-lg">¿Cómo se hizo?</md-button>
                     <template slot="popover">
@@ -156,9 +156,9 @@
             color-button="warning">
             <template class="d3js-mobile" slot="tab-pane-1">
               <div id="3-map-mobile">
-                <h4><span>Flujo de trayectos entre diferentes barrios</span>, New York</h4>
+              <h4><span id="3-span-mobile">Flujo de trayectos entre diferentes barrios</span>, New York</h4>
               </div>
-              <d3-map id-map="d3-map-mobile"/>
+              <d3-map id-map="d3-map-mobile" span-id="3-span-mobile"/>
               <div class = "button-center">
                 <v-popover offset="4" placement="bottom"> 
                   <md-button class="md-rose md-lg">¿Cómo se hizo?</md-button>

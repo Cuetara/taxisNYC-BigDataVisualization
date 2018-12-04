@@ -9,12 +9,16 @@ export default {
       idMap: {
         type: String,
         required: true
+      },
+      spanId: {
+        type: String,
+        default: ''
       }
     },
     mounted () {
       this.$nextTick(_ => {
         const params = checkparasmBreakPoints()
-        initD3Map(params.scale, params.coordenates, this.idMap)
+        initD3Map(params.scale, params.coordenates, this.idMap, this.spanId)
         window.addEventListener('resize', this.onResize, true)
       })
     },
@@ -23,7 +27,7 @@ export default {
         const element = document.querySelector(`#${this.idMap} svg`)
         element.parentNode.removeChild(element)
         const params = checkparasmBreakPoints()
-        initD3Map(params.scale, params.coordenates, this.idMap)
+        initD3Map(params.scale, params.coordenates, this.idMap,  this.spanId)
       }
     }
 }
@@ -55,7 +59,7 @@ function checkparasmBreakPoints () {
   }
 }
 
-function initD3Map (scale = 70000, coordenates = [-74.00, 40.71], id) {
+function initD3Map (scale = 70000, coordenates = [-74.00, 40.71], id, spanId) {
     var w = '100%',
     h = 520;
 
@@ -132,7 +136,7 @@ d3.csv("./districts.csv", function(areas) {
   g.append("svg:path")
       .attr("class", "cell")
       .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
-      .on("mouseover", function(d, i) { d3.select("h4 span").text(d.iata); });
+      .on("mouseover", function(d, i) { d3.select(`[id='${spanId}']`).text(d.iata); });
 
   g.selectAll("path.arc")
       .data(function(d) { return linksByOrigin[d.iata] || []; })
